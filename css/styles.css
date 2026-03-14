@@ -19,7 +19,17 @@ body {
 .content {
     padding: 30px;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1200px;
+}
+
+/* Prevent text from overlapping images on smaller screens */
+@media (max-width: 767px) {
+    .content .row {
+        flex-direction: column-reverse;
+    }
+    .content img {
+        margin-bottom: 20px;
+    }
 }
 
 .navbar-nav .btn {
